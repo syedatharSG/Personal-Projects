@@ -4,6 +4,10 @@ In the project directory, you can run:
 
 ### `npm install`
 
+OR install node:
+
+### https://nodejs.org/en/download
+
 Then:
 
 ### `npm start`
