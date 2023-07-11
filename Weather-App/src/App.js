@@ -1,11 +1,16 @@
 import React, { useState } from "react";
+
+// API Source: OpenWeatherMap.org
 const api = {
   key: "74abde792af0b43fbafa5d46c343ce8b",
   base: "https://api.openweathermap.org/data/2.5/",
 };
+
 function App() {
   const [query, setQuery] = useState("");
   const [weather, setWeather] = useState({});
+
+  // API Request/Response
   const search = (evt) => {
     if (evt.key === "Enter") {
       fetch(
