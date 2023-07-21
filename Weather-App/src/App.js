@@ -60,6 +60,7 @@ function App() {
   return (
     <div className= {
       (typeof weather.main != 'undefined') ? (
+        // TODO: Display a variety of images based on the current weather
         (weather.main.temp > 70) ? 'app warm' : 'app')
       : 'app'}>
       <main>
