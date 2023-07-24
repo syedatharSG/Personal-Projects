@@ -25,6 +25,7 @@ function App() {
     }
   }
 
+  // Date format -- Months and Weekdays
   const dateBuilder = (date) => {
     let months = [
       "January",
@@ -53,12 +54,13 @@ function App() {
     let date1 = date.getDate();
     let month = months[date.getMonth()];
     let year = date.getFullYear();
-
+    // The format of the date -- Day of the week + the date + month + year
     return `${day} ${date1} ${month} ${year}`;
   };
   return (
     <div className= {
       (typeof weather.main != 'undefined') ? (
+        // TODO: Display a variety of images based on the current weather
         (weather.main.temp > 70) ? 'app warm' : 'app')
       : 'app'}>
       <main>
