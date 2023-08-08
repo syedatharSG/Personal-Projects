@@ -11,7 +11,6 @@ const article = [
         2022 survey, VS Code is the IDE of choice across all developers.
       </p>
       
-      {/* ... (content continues) ... */}
       
       <h2>Bracket Pair Colorizer</h2>
       <p>
@@ -25,8 +24,6 @@ const article = [
         <strong>NPM</strong> is a super handy extension for VS Code that runs the npm scripts in your <code>package.json</code>
         file and also it validates the packages installed in your project, which are listed in the <code>package.json</code> file.
       </p>
-      
-      {/* ... (more content) ... */}
       
       <p>
         There are so many extensions on the VS Code Marketplace that are helpful when doing software development, but to find
