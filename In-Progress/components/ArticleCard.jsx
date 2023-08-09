@@ -12,13 +12,13 @@ const Article = ({ title, imageUrl, date, content }) => {
 
 
   return (
-    <div className="bg-stone-50 dark:bg-gray-900 rounded-lg shadow-lg p-6 w-98 h-48 mb-8">
-      <h2 className="text-2xl font-bold">{title}</h2>
+    <div className="bg-stone-50 dark:bg-gray-900 rounded-lg shadow-lg p-6 w-98 h-48 mb-8 text-ternary-dark dark:text-ternary-light">
+      <h2 className="mb-1 font-general-medium text-4xl">{title}</h2>
       <div className="mb-4">
         <img src={imageUrl} alt={title} className="w-97 h-48 object-cover rounded-md mx-auto" />
       </div>
-      <p className="text-gray-600 px-6 pb-2">{date}</p>
-      <div className="prose max-w-none px-6">
+      <p className="font-general-medium text-xl text-gray-600 px-6 pb-2">{date}</p>
+      <div className="font-general-regular prose max-w-none px-6">
         {displayContent}
         {childrenArray[0].props.children.length > 200 && (
           <button
