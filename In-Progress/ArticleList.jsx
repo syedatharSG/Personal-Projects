@@ -1,135 +1,66 @@
-import React from 'react';
+import React, { useState, Children, cloneElement } from 'react';
 import ArticleCard from './ArticleCard';
-const article = [ 
-    {
-        title: "Getting Started with Tailwind CSS",
-        date: "August 8, 2023",
-        content:     <>
-        <p>
-        Visual Studio Code (VS Code) is the most popular coding editor for developers made by Microsoft.
-        It is a free and open source software made by developers for developers. According to the Stack Overflow
-        2022 survey, VS Code is the IDE of choice across all developers.
-      </p>
-      
-      {/* ... (content continues) ... */}
-      
-      <h2>Bracket Pair Colorizer</h2>
-      <p>
-        <em>Bracket Pair Colorizer</em> can highlight matching brackets in the editor, so developers can easily
-        understand which 2 brackets belong to each other. By default <code>()</code>, <code>[]</code>, and <code>{}</code>
-        are matched, but you can also configure custom bracket characters.
-      </p>
-      
-      <h2>NPM</h2>
-      <p>
-        <strong>NPM</strong> is a super handy extension for VS Code that runs the npm scripts in your <code>package.json</code>
-        file and also it validates the packages installed in your project, which are listed in the <code>package.json</code> file.
-      </p>
-      
-      {/* ... (more content) ... */}
-      
-      <p>
-        There are so many extensions on the VS Code Marketplace that are helpful when doing software development, but to find
-        the best among them will take some getting used to. The list provided here includes some of the best extensions,
-        and it will be updated regularly to add more extensions that may come in the future.
-      </p>
+import { articleData } from '../data/ArticleData';
+import {motion} from 'framer-motion';
+import LinkPreview from '@ashwamegh/react-link-preview';
+// If you're using built in layout, you will need to import this css
 
-      </>,
-        imageUrl: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2348&q=80",
-    },
-    {
-        title: "Getting Started with Tailwind CSS",
-        date: "August 8, 2023",
-        content:     <>
-        <p>
-        Visual Studio Code (VS Code) is the most popular coding editor for developers made by Microsoft.
-        It is a free and open source software made by developers for developers. According to the Stack Overflow
-        2022 survey, VS Code is the IDE of choice across all developers.
-      </p>
-      
-      {/* ... (content continues) ... */}
-      
-      <h2>Bracket Pair Colorizer</h2>
-      <p>
-        <em>Bracket Pair Colorizer</em> can highlight matching brackets in the editor, so developers can easily
-        understand which 2 brackets belong to each other. By default <code>()</code>, <code>[]</code>, and <code>{}</code>
-        are matched, but you can also configure custom bracket characters.
-      </p>
-      
-      <h2>NPM</h2>
-      <p>
-        <strong>NPM</strong> is a super handy extension for VS Code that runs the npm scripts in your <code>package.json</code>
-        file and also it validates the packages installed in your project, which are listed in the <code>package.json</code> file.
-      </p>
-      
-      {/* ... (more content) ... */}
-      
-      <p>
-        There are so many extensions on the VS Code Marketplace that are helpful when doing software development, but to find
-        the best among them will take some getting used to. The list provided here includes some of the best extensions,
-        and it will be updated regularly to add more extensions that may come in the future.
-      </p>
 
-      </>,
-        imageUrl: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2348&q=80",
-    },
-    {
-        title: "Getting Started with Tailwind CSS",
-        date: "August 8, 2023",
-        content:     <>
-        <p>
-        Visual Studio Code (VS Code) is the most popular coding editor for developers made by Microsoft.
-        It is a free and open source software made by developers for developers. According to the Stack Overflow
-        2022 survey, VS Code is the IDE of choice across all developers.
-      </p>
-      
-      {/* ... (content continues) ... */}
-      
-      <h2>Bracket Pair Colorizer</h2>
-      <p>
-        <em>Bracket Pair Colorizer</em> can highlight matching brackets in the editor, so developers can easily
-        understand which 2 brackets belong to each other. By default <code>()</code>, <code>[]</code>, and <code>{}</code>
-        are matched, but you can also configure custom bracket characters.
-      </p>
-      
-      <h2>NPM</h2>
-      <p>
-        <strong>NPM</strong> is a super handy extension for VS Code that runs the npm scripts in your <code>package.json</code>
-        file and also it validates the packages installed in your project, which are listed in the <code>package.json</code> file.
-      </p>
-      
-      {/* ... (more content) ... */}
-      
-      <p>
-        There are so many extensions on the VS Code Marketplace that are helpful when doing software development, but to find
-        the best among them will take some getting used to. The list provided here includes some of the best extensions,
-        and it will be updated regularly to add more extensions that may come in the future.
-      </p>
-
-      </>,
-        imageUrl: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2348&q=80",
-    },
-]
 const ArticleList = () => {
+    const [previewData, setPreviewData] = useState(null);
+
+  const fetchLinkPreview = async () => {
+    try {
+      const response = await fetch('/preview?url=https://www.youtube.com/watch?v=8mqqY2Ji7_g');
+      const data = await response.json();
+      setPreviewData(data);
+      console.log(data);
+    } catch (error) {
+      console.error('Error fetching link preview:', error);
+    }
+  };
+
   return (
+    <motion.section
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    transition={{ ease: 'easeInOut', duration: 0.9, delay: 0.2 }}
+    >
     <div className="text-center">
         <p className="mt-8 font-general-medium text-2xl sm:text-4xl mb-8 text-ternary-dark dark:text-ternary-light">
             Articles
 		</p>
         <div className="flex items-center justify-center min-h-screen">
         <div className="grid grid-rows-1 md:grid-rows-2 lg:grid-rows-3 gap-4">
-        {article.map((article, index) => (
+        {articleData.map((articleData, index) => (
             <ArticleCard
               key={index}
-              title={article.title}
-              imageUrl={article.imageUrl}
-              date={article.date}
-              content={article.content}
+              title={articleData.title}
+              imageUrl={articleData.imageUrl}
+              date={articleData.date}
+              content={articleData.content}
             />
           ))}
         </div>
         </div>
     </div>
+
+    <div>
+      <button onClick={fetchLinkPreview}>Fetch Link Preview</button>
+      {previewData && (
+        <LinkPreview
+          title={previewData.title}
+          description={previewData.description}
+          image={previewData.image}
+          url={previewData.url}
+        />
+      )}
+    </div>
+
+
+
+    </motion.section>
+
   );
 };
 
