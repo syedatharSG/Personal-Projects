@@ -8,6 +8,7 @@ const ArticleCard = ({ title, imageUrl, date, content }) => {
   };
 
   let childrenArray = Children.toArray(content.props.children);
+  // only display up to 200 characters
   const displayContent = expanded ? childrenArray : childrenArray[0].props.children.slice(0,200);
 
 
