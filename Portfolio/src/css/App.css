@@ -1,0 +1,88 @@
+/*== 
+ * React & TailwindCSS Portfolio Main CSS File
+ * Powered by: @realstoman
+*/
+
+body {
+	font-family: 'GeneralSans-Variable';
+}
+
+/* Fonts */
+
+@font-face {
+	font-family: 'JetBrainsMonoNL-Regular';
+	src: url('../fonts/JetBrainsMonoNL-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-display: swap;
+	font-style: normal;
+}
+
+.font-general-regular {
+	font-family: 'JetBrainsMonoNL-Regular';
+}
+
+@font-face {
+	font-family: 'JetBrainsMonoNL-Medium';
+	src: url('../fonts/JetBrainsMonoNL-Medium.ttf') format('truetype'),
+	url('../fonts/JetBrainsMono-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-display: swap;
+	font-style: normal;
+}
+
+.font-general-medium {
+	font-family: 'JetBrainsMonoNL-Medium';
+}
+
+@font-face {
+	font-family: 'JetBrainsMonoNL-SemiBold';
+	src: url('../fonts/JetBrainsMonoNL-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-display: swap;
+	font-style: normal;
+}
+
+.font-general-semibold {
+	font-family: 'JetBrainsMonoNL-SemiBold';
+}
+
+@font-face {
+	font-family: 'JetBrainsMonoNL-Bold';
+	src: url('../fonts/JetBrainsMono-Bold.ttf') format('truetype');
+	font-weight: 600;
+	font-display: swap;
+	font-style: normal;
+}
+
+.font-general-bold {
+	font-family: 'JetBrainsMonoNL-Bold';
+}
+
+/* Scroll to top style */
+.scrollToTop {
+	@apply bg-indigo-600;
+	@apply text-white;
+	position: fixed;
+	width: 100%;
+	align-items: center;
+	height: 20px;
+	justify-content: center;
+	z-index: 999;
+	cursor: pointer;
+	animation: fadeIn 0.3s;
+	transition: opacity 0.4s;
+	opacity: 0.9;
+}
+
+.scrollToTop:hover {
+	opacity: 1;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0.5;
+	}
+}
