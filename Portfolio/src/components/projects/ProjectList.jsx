@@ -11,19 +11,19 @@ const projects = [
     title: 'Weather App',
     description: 'An app that displays the current temperature of a city along with other relevant information!',
     image: weatherApp,
-    sourceCodeLink: 'https://github.com/syedatharSG',
+    sourceCodeLink: 'https://github.com/syedatharSG/PersonalProjects/tree/main/Weather-App',
   },
   {
     title: 'Tic-Tac-Toe',
     description: 'A collaborative IDE app for interactive Tic-Tac-Toe gaming. Enjoy multiplayer fun together!!',
     image: ticTacToeApp,
-    sourceCodeLink: 'https://github.com/syedatharSG',
+    sourceCodeLink: 'https://github.com/syedatharSG/PersonalProjects/tree/main/Tic-Tac-Toe',
   },
   {
     title: 'Portfolio Website',
     description: "Explore the source code of the portfolio you're currently scrolling through!",
     image: portfolio,
-    sourceCodeLink: 'https://github.com/syedatharSG',
+    sourceCodeLink: 'https://github.com/syedatharSG/PersonalProjects/tree/main/Portfolio',
   },
   // Add more projects as needed
 ];
