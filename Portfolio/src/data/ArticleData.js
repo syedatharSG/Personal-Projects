@@ -1,5 +1,5 @@
 
-import carbon from '../images/carbon.png';
+import codeSnippet from '../images/codeSnippet.png';
 const url = 'https://getlinkpreview.onrender.com/';
 const requestUrl = 'https://www.youtube.com/watch?v=-OO1FqnjVuQ&ab_channel=TheMacLife'; // Replace with the URL you want to preview
 
@@ -50,33 +50,12 @@ export const articleData = [
       between the two classes — the original class and the class that's inheriting the original class. We call the original class the parent or superclass, whereas
       the inheriting class is called the child or subclass.
       </p>
-      <body>
-      <script src="https://gist.github.com/syedatharSG/b6e1cfa12181a2c7b277c86c9ef05fe5.js"></script>
-      </body>
+      <div class="mt-8 mb-8 flex justify-center items-center w-97 h-48 object-cover rounded-md mx-auto">
+        <img src={codeSnippet} alt="Centered Image" class="w-32 h-32" />
+    </div>
       
       
-      {/* ... (content continues) ... */}
-      
-      <h2>Bracket Pair Colorizer</h2>
-      <p>
-        <em>Bracket Pair Colorizer</em> can highlight matching brackets in the editor, so developers can easily
-        understand which 2 brackets belong to each other. By default <code>()</code>, <code>[]</code>, and <code>{}</code>
-        are matched, but you can also configure custom bracket characters.
-      </p>
-      
-      <h2>NPM</h2>
-      <p>
-        <strong>NPM</strong> is a super handy extension for VS Code that runs the npm scripts in your <code>package.json</code>
-        file and also it validates the packages installed in your project, which are listed in the <code>package.json</code> file.
-      </p>
-      
-      {/* ... (more content) ... */}
-      
-      <p>
-        There are so many extensions on the VS Code Marketplace that are helpful when doing software development, but to find
-        the best among them will take some getting used to. The list provided here includes some of the best extensions,
-        and it will be updated regularly to add more extensions that may come in the future.
-      </p>
+      <p>To be continued...</p>
 
       </>,
         imageUrl: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3870&q=80",
