@@ -1,6 +1,8 @@
 
+import carbon from '../images/carbon.png';
 const url = 'https://getlinkpreview.onrender.com/';
 const requestUrl = 'https://www.youtube.com/watch?v=-OO1FqnjVuQ&ab_channel=TheMacLife'; // Replace with the URL you want to preview
+
 
 // JSON request payload
 const requestData = {
@@ -35,14 +37,23 @@ fetch(url, {
 export const articleData = [ 
   
     {
-        title: "Prep for Coding Interviews",
-        date: "September 4, 2023",
+        title: "Principles of Object Oriented Programming",
+        date: "October 5th, 2023",
         content:     <>
         <p>
-        Coding interview can be stressful! Hence, it is imperative that we all do the utmost to prepare for these interview. Here are a list of few resources
-        that I've found helpful when preparing for the interview:
+        There are four main principles or pillars of object oritented programming: Inheritance, Abstraction, Encapsulation, and Polymorphism. 
+        This article is a quick guide that goes over the aforementioned principles in a consise way.
       </p>
 
+      <h1>Inheritance</h1>
+      <p>In a Object-Oriented Programming language, we can inherit methods and attriutes from one class to another. This creates a relationship
+      between the two classes — the original class and the class that's inheriting the original class. We call the original class the parent or superclass, whereas
+      the inheriting class is called the child or subclass.
+      </p>
+      <body>
+      <script src="https://gist.github.com/syedatharSG/b6e1cfa12181a2c7b277c86c9ef05fe5.js"></script>
+      </body>
+      
       
       {/* ... (content continues) ... */}
       
