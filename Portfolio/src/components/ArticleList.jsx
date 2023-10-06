@@ -9,17 +9,6 @@ import LinkPreview from '@ashwamegh/react-link-preview';
 const ArticleList = () => {
     const [previewData, setPreviewData] = useState(null);
 
-  const fetchLinkPreview = async () => {
-    try {
-      const response = await fetch('/preview?url=https://www.youtube.com/watch?v=8mqqY2Ji7_g');
-      const data = await response.json();
-      setPreviewData(data);
-      console.log(data);
-    } catch (error) {
-      console.error('Error fetching link preview:', error);
-    }
-  };
-
   return (
     <motion.section
     initial={{ opacity: 0 }}
