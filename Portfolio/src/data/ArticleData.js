@@ -45,7 +45,7 @@ export const articleData = [
         This article is a quick guide that goes over the aforementioned principles in a consise way.
       </p>
 
-      <h1>Inheritance</h1>
+      <h2 className="mb-4 font-general-medium text-2xl">Inheritance</h2>
       <p>In a Object-Oriented Programming language, we can inherit methods and attriutes from one class to another. This creates a relationship
       between the two classes — the original class and the class that's inheriting the original class. We call the original class the parent or superclass, whereas
       the inheriting class is called the child or subclass.
@@ -53,7 +53,8 @@ export const articleData = [
       <div class="mt-8 mb-8 flex justify-center items-center w-97 h-48 object-cover rounded-md mx-auto">
         <img src={codeSnippet} alt="Centered Image" class="w-32 h-32" />
     </div>
-      
+      <p>The example above utilizes Java to showcase how Inheritance works — it allows the subclass to use the parent class' attributes and methods without  explicity defining in its own class.
+      Hence, Inheritance promotes code reusability and allowing the subclass to define its own seprate methods, which is an to the parent class. </p>
       
       <p>To be continued...</p>
 
