@@ -18,7 +18,7 @@ const ArticleCard = ({ title, imageUrl, date, content, imageUrl2 }) => {
         <img src={imageUrl} alt={title} className="w-97 h-48 object-cover rounded-md mx-auto" />
       </div>
       <p className="font-general-medium text-xl text-gray-600 px-6 pb-2">{date}</p>
-      <div className="font-general-regular prose max-w-none px-6">
+      <div className="text-left font-general-regular prose max-w-none px-6">
         {displayContent}
         {childrenArray[0].props.children.length > 200 && (
           <button

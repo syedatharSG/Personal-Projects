@@ -1,5 +1,5 @@
 
-import codeSnippet from '../images/codeSnippet.png';
+import codeSnippet from '../images/InheritanceCodeExample.png';
 const url = 'https://getlinkpreview.onrender.com/';
 const requestUrl = 'https://www.youtube.com/watch?v=-OO1FqnjVuQ&ab_channel=TheMacLife'; // Replace with the URL you want to preview
 
@@ -45,8 +45,8 @@ export const articleData = [
         This article is a quick guide that goes over the aforementioned principles in a consise way.
       </p>
 
-      <h2 className="mb-4 font-general-medium text-2xl">Inheritance</h2>
-      <p>In a Object-Oriented Programming language, we can inherit methods and attriutes from one class to another. This creates a relationship
+      <h2 className="mb-4 mt-4 font-general-medium text-2xl">Inheritance:</h2>
+      <p>In an Object-Oriented Programming language, we can inherit methods and attriutes from one class to another. This creates a relationship
       between the two classes — the original class and the class that's inheriting the original class. We call the original class the parent or superclass, whereas
       the inheriting class is called the child or subclass.
       </p>
@@ -54,9 +54,20 @@ export const articleData = [
         <img src={codeSnippet} alt="Centered Image" class="w-32 h-32" />
     </div>
       <p>The example above utilizes Java to showcase how Inheritance works — it allows the subclass to use the parent class' attributes and methods without  explicity defining in its own class.
-      Hence, Inheritance promotes code reusability and allowing the subclass to define its own seprate methods, which is an to the parent class. </p>
-      
-      <p>To be continued...</p>
+      Hence, Inheritance promotes code reusability and allowing the subclass to define its own seprate methods, which is an extension to the parent class. </p>
+      <p>Notably, Java uses the Extends keyword to inherit a class. Most programming langugages will use their own unique syntax to inherit from a class, however the fundamental concept remains the same in the object-oriented paradigm.  </p>
+
+      <h2 className="mb-4 mt-4 font-general-medium text-2xl">Abstraction:</h2>
+      <p>In an Object-Oriented Programming language, we can inherit methods and attriutes from one class to another. This creates a relationship
+      between the two classes — the original class and the class that's inheriting the original class. We call the original class the parent or superclass, whereas
+      the inheriting class is called the child or subclass.
+      </p>
+      <div class="mt-8 mb-8 flex justify-center items-center w-97 h-48 object-cover rounded-md mx-auto">
+        <img src={codeSnippet} alt="Centered Image" class="w-32 h-32" />
+    </div>
+      <p>The example above utilizes Java to showcase how Inheritance works — it allows the subclass to use the parent class' attributes and methods without  explicity defining in its own class.
+      Hence, Inheritance promotes code reusability and allowing the subclass to define its own seprate methods, which is an extension to the parent class. </p>
+      <p>Notably, Java uses the Extends keyword to inherit a class. Most programming langugages will use their own unique syntax to inherit from a class, however the fundamental concept remains the same in the object-oriented paradigm.  </p>
 
       </>,
         imageUrl: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3870&q=80",
