@@ -1,6 +1,8 @@
 
 import inheritanceCodeExample from '../images/InheritanceCodeExample.png';
 import abstractionCodeExample from '../images/AbstractionCodeExample.png';
+import encapsulationCodeExample from '../images/EncapsulationCodeExample.png';
+import polymorphismCodeExample from '../images/PolymorphismCodeExample.png';
 import OOPArticelImage from '../images/OOPArticleImage.png';
 
 const url = 'https://getlinkpreview.onrender.com/';
@@ -72,16 +74,29 @@ export const articleData = [
 
 
      <h2 className="mb-4 mt-4 font-general-medium text-2xl">Encapsulation:</h2>
-      <p>Some content....
+      <p>The general idea of this mechanism is simple. For example, you have an attribute that is not visible from the outside of an object. You bundle it with methods that provide read or write access. 
+      Encapsulation allows you to hide specific information and control access to the object's internal state. In the realm of object-oriented programming, we call this functionality as getter and setter methods. 
+      As the names indicate, a getter method retrieves an attribute and a setter method changes it.
       </p>
-       <img src={abstractionCodeExample} alt="Centered Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
-
+       <img src={encapsulationCodeExample} alt="Centered Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
+      <p> The example above demonstrates the class attributes (<em>selection</em> and <em>quantity</em>) can't be accessed directly. 
+      To access them, we have <em>getSelection</em>, <em>getQuantity</em>, and <em>setQuantity</em> methods that allows to change and accecss certain values.
+      By doing so, the class has hidden a particular piece of information and has limited the access to its attributes. </p>
 
      <h2 className="mb-4 mt-4 font-general-medium text-2xl">Polymorphism:</h2>
-      <p>some content....
+      <p>Polymorphism means "many forms" and in layman terms, it refers to classes that are related to one another by inheritance. Consider the class below:
       </p>
-       <img src={abstractionCodeExample} alt="Centered Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
-
+       <img src={polymorphismCodeExample} alt="Centered Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
+       <p>The <em>Person</em> class has a method called <em>teach</em>, and the <em>Teacher</em> class has a method with the same name. Polymorphism utilzies the
+       inheritance relationship to perform different tasks. Each class that inherits <em>Person</em> can have its own implementation of <em>teach</em> method. 
+       For instance, we can also add a <em>Professor</em> class that has its own <em>teach</em> method with added parameters.</p>
+       <p>Polymorphism is incredibly useful when there's different types of objects, and we write classes that can work with all those different types since they all abide by the same API.
+       On top of that, it comes in handy whenever we we want to add a new <em>Person</em> to the application without changing any of the existing logic in code.
+      </p>
+       
+      <p>Object-Oriented Programming Principles remain a powerful tool that allows us to develop efficient, scalable, and maintainable software solutions. By embracing these principles,
+      we become equipped with the power to write good code that will not only stand the test of time, but also it will be much easier to manage and modify in the long haul. </p>
+       
       </>,
         imageUrl: OOPArticelImage,
     },
