@@ -630,6 +630,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-98 {
   width: 90rem;
 }
+.w-99 {
+  width: 36rem;
+}
 .w-40 {
   width: 10rem;
 }
@@ -641,6 +644,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-18 {
   width: 5rem;
+}
+.w-19 {
+  width: 6rem;
 }
 .w-36 {
   width: 9rem;
@@ -1186,6 +1192,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-scale-x: .9;
   --tw-scale-y: .9;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@media (min-width: 640px) {
+  .sm\:max-w-md {
+      max-width: 768px/* 448px */;
+  }
 }
 @media (min-width: 640px) {
 

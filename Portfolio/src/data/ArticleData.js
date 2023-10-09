@@ -1,5 +1,7 @@
 
-import codeSnippet from '../images/InheritanceCodeExample.png';
+import inheritanceCodeExample from '../images/InheritanceCodeExample.png';
+import abstractionCodeExample from '../images/AbstractionCodeExample.png';
+
 const url = 'https://getlinkpreview.onrender.com/';
 const requestUrl = 'https://www.youtube.com/watch?v=-OO1FqnjVuQ&ab_channel=TheMacLife'; // Replace with the URL you want to preview
 
@@ -45,32 +47,37 @@ export const articleData = [
         This article is a quick guide that goes over the aforementioned principles in a consise way.
       </p>
 
-      <h2 className="mb-4 mt-4 font-general-medium text-2xl">Inheritance:</h2>
-      <p>In an Object-Oriented Programming language, we can inherit methods and attriutes from one class to another. This creates a relationship
+      <h2 className="mt-4 mb-4 font-general-medium text-2xl">Inheritance:</h2>
+      <p>In a Object-Oriented Programming language, we can inherit methods and attriutes from one class to another. This creates a relationship
       between the two classes — the original class and the class that's inheriting the original class. We call the original class the parent or superclass, whereas
       the inheriting class is called the child or subclass.
       </p>
-      <div class="mt-8 mb-8 flex justify-center items-center w-97 h-48 object-cover rounded-md mx-auto">
-        <img src={codeSnippet} alt="Centered Image" class="w-32 h-32" />
-    </div>
+      <img src={inheritanceCodeExample} alt="Centered Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
       <p>The example above utilizes Java to showcase how Inheritance works — it allows the subclass to use the parent class' attributes and methods without  explicity defining in its own class.
-      Hence, Inheritance promotes code reusability and allowing the subclass to define its own seprate methods, which is an extension to the parent class. </p>
-      <p>Notably, Java uses the Extends keyword to inherit a class. Most programming langugages will use their own unique syntax to inherit from a class, however the fundamental concept remains the same in the object-oriented paradigm.  </p>
-
+      Hence, Inheritance promotes code reusability and allowing the subclass to define its own seprate methods, which is an to the parent class. </p>
+      
       <h2 className="mb-4 mt-4 font-general-medium text-2xl">Abstraction:</h2>
-      <p>In an Object-Oriented Programming language, we can inherit methods and attriutes from one class to another. This creates a relationship
-      between the two classes — the original class and the class that's inheriting the original class. We call the original class the parent or superclass, whereas
-      the inheriting class is called the child or subclass.
+      <p>Abstraction is used to hide internal details from a user and only display the essential information to them. In real life, we can take any machine or a piece of equipment to demonstrate abstraction. For instance, if we use a corded lawn mower, we plug it in the power outlet and turn on the machine to begin cutting grass.
+      The individual who's using this machine does not need to know how the internals of the machine is operating — motors, wires, and metals, etc. The user merely needs to know a series of simple steps that are unrelated to the machine's internal operation.
+      In OOP, we can achieve abstraction with abstract classes and interfaces. Abstract classes can't be instantiated to create objects, rather it has to be inherited by another class:
       </p>
-      <div class="mt-8 mb-8 flex justify-center items-center w-97 h-48 object-cover rounded-md mx-auto">
-        <img src={codeSnippet} alt="Centered Image" class="w-32 h-32" />
-    </div>
-      <p>The example above utilizes Java to showcase how Inheritance works — it allows the subclass to use the parent class' attributes and methods without  explicity defining in its own class.
-      Hence, Inheritance promotes code reusability and allowing the subclass to define its own seprate methods, which is an extension to the parent class. </p>
-      <p>Notably, Java uses the Extends keyword to inherit a class. Most programming langugages will use their own unique syntax to inherit from a class, however the fundamental concept remains the same in the object-oriented paradigm.  </p>
+       <img src={abstractionCodeExample} alt="Centered Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
+      <p>By inheriting the abstraction class, the <em>somePhone</em> class gets inherits the <em>Call</em> method. It does not how the <em>Call</em> methods. However, it has to provide the implementation of
+      <em> Dial</em> method since it is an abstract method, and the class that inherits the abstract class must provide an implementation for the abstract methods.
+      Once it provides a body for the aforementioned method, it calls upon the <em>Call</em> method. This is an example of 
+      Abstraction as the <em>somePhone</em> utilizes <em>Call</em> method without knowing how it works internally!</p>
+     <p>It is also worth mentioning an abstract class can have its own set of fields/attributes that can be accessed by the subclass.</p> 
 
       </>,
         imageUrl: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3870&q=80",
+        codeSnippets: [
+          `function greet() {
+             console.log("Hello, world!");
+          }`,
+          `function add(a, b) {
+             return a + b;
+          }`
+        ],
     },
     {
         title: "Getting Started with Tailwind CSS",
