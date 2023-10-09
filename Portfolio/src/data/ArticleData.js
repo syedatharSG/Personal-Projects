@@ -57,6 +57,7 @@ export const articleData = [
       <p>The example above utilizes Java to showcase how Inheritance works — it allows the subclass to use the parent class' attributes and methods without  explicity defining in its own class.
       Hence, Inheritance promotes code reusability and allowing the subclass to define its own seprate methods, which is an to the parent class. </p>
       
+      
       <h2 className="mb-4 mt-4 font-general-medium text-2xl">Abstraction:</h2>
       <p>Abstraction is used to hide internal details from a user and only display the essential information to them. In real life, we can take any machine or a piece of equipment to demonstrate abstraction. For instance, if we use a corded lawn mower, we plug it in the power outlet and turn on the machine to begin cutting grass.
       The individual who's using this machine does not need to know how the internals of the machine is operating — motors, wires, and metals, etc. The user merely needs to know a series of simple steps that are unrelated to the machine's internal operation.
@@ -68,6 +69,18 @@ export const articleData = [
       Once it provides a body for the aforementioned method, it calls upon the <em>Call</em> method. This is an example of 
       Abstraction as the <em>somePhone</em> utilizes <em>Call</em> method without knowing how it works internally!</p>
      <p>It is also worth mentioning an abstract class can have its own set of fields/attributes that can be accessed by the subclass.</p> 
+
+
+     <h2 className="mb-4 mt-4 font-general-medium text-2xl">Encapsulation:</h2>
+      <p>Some content....
+      </p>
+       <img src={abstractionCodeExample} alt="Centered Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
+
+
+     <h2 className="mb-4 mt-4 font-general-medium text-2xl">Polymorphism:</h2>
+      <p>some content....
+      </p>
+       <img src={abstractionCodeExample} alt="Centered Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
 
       </>,
         imageUrl: OOPArticelImage,
