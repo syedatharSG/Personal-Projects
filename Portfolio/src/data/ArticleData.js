@@ -1,6 +1,7 @@
 
 import inheritanceCodeExample from '../images/InheritanceCodeExample.png';
 import abstractionCodeExample from '../images/AbstractionCodeExample.png';
+import OOPArticelImage from '../images/OOPArticleImage.png';
 
 const url = 'https://getlinkpreview.onrender.com/';
 const requestUrl = 'https://www.youtube.com/watch?v=-OO1FqnjVuQ&ab_channel=TheMacLife'; // Replace with the URL you want to preview
@@ -69,15 +70,7 @@ export const articleData = [
      <p>It is also worth mentioning an abstract class can have its own set of fields/attributes that can be accessed by the subclass.</p> 
 
       </>,
-        imageUrl: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3870&q=80",
-        codeSnippets: [
-          `function greet() {
-             console.log("Hello, world!");
-          }`,
-          `function add(a, b) {
-             return a + b;
-          }`
-        ],
+        imageUrl: OOPArticelImage,
     },
     {
         title: "Getting Started with Tailwind CSS",
