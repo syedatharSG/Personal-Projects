@@ -107,14 +107,14 @@ export const articleData = [
         date: "October 10, 2023",
         content:     <>
         <p> Recently, I stumbled across a SQL cheat sheet that it worth including in an article. As developers, we often have to craft queries to 
-        retrieve data and perhaps conduct some analysis. While the complex data analysis requires a skilled data analyst, the SQL basics cheat sheet is more than
-        enough to conduct simple data analysis on tables in a database. 
+        retrieve data and perhaps conduct some analysis. While complex data analysis may require the expertise of a skilled data analyst, the SQL basics cheat sheet allows 
+        developers to perform simple yet essential data analysis on tables within a database.
       </p>
 
       <img src={sqlCheatSheetP1} alt="Centered Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
       <img src={sqlCheatSheetP2} alt="Centered Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
-      
-
+    
+      <p>The cheat sheet covers the fundamental of sql such as selecting columns, filtering output using <em> WHERE </em> clause</p>
       </>,
         imageUrl: "https://img.freepik.com/free-vector/isometric-sql-illustration_23-2149260766.jpg?w=1480&t=st=1696974541~exp=1696975141~hmac=f411bd1cfb05f3e7da5d2e01f183d316f8a2753117953c63fc4e551e2f33e9f3",
     },
