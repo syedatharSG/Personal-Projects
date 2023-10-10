@@ -3,6 +3,8 @@ import inheritanceCodeExample from '../images/InheritanceCodeExample.png';
 import abstractionCodeExample from '../images/AbstractionCodeExample.png';
 import encapsulationCodeExample from '../images/EncapsulationCodeExample.png';
 import polymorphismCodeExample from '../images/PolymorphismCodeExample.png';
+import sqlCheatSheetP1 from '../images/sql-basics-cheat-sheet-page-1.png';
+import sqlCheatSheetP2 from '../images/sql-basics-cheat-sheet-page-2.png';
 import OOPArticelImage from '../images/OOPArticleImage.png';
 
 const url = 'https://getlinkpreview.onrender.com/';
@@ -101,40 +103,20 @@ export const articleData = [
         imageUrl: OOPArticelImage,
     },
     {
-        title: "Getting Started with Tailwind CSS",
-        date: "August 8, 2023",
+        title: "SQL Basics Cheat Sheet",
+        date: "October 10, 2023",
         content:     <>
-        <p>
-        Visual Studio Code (VS Code) is the most popular coding editor for developers made by Microsoft.
-        It is a free and open source software made by developers for developers. According to the Stack Overflow
-        2022 survey, VS Code is the IDE of choice across all developers.
-      </p>
-      
-      {/* ... (content continues) ... */}
-      
-      <h2>Bracket Pair Colorizer</h2>
-      <p>
-        <em>Bracket Pair Colorizer</em> can highlight matching brackets in the editor, so developers can easily
-        understand which 2 brackets belong to each other. By default <code>()</code>, <code>[]</code>, and <code>{}</code>
-        are matched, but you can also configure custom bracket characters.
-      </p>
-      
-      <h2>NPM</h2>
-      <p>
-        <strong>NPM</strong> is a super handy extension for VS Code that runs the npm scripts in your <code>package.json</code>
-        file and also it validates the packages installed in your project, which are listed in the <code>package.json</code> file.
-      </p>
-      
-      {/* ... (more content) ... */}
-      
-      <p>
-        There are so many extensions on the VS Code Marketplace that are helpful when doing software development, but to find
-        the best among them will take some getting used to. The list provided here includes some of the best extensions,
-        and it will be updated regularly to add more extensions that may come in the future.
+        <p> Recently, I stumbled across a SQL cheat sheet that it worth including in an article. As developers, we often have to craft queries to 
+        retrieve data and perhaps conduct some analysis. While the complex data analysis requires a skilled data analyst, the SQL basics cheat sheet is more than
+        enough to conduct simple data analysis on tables in a database. 
       </p>
 
+      <img src={sqlCheatSheetP1} alt="Centered Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
+      <img src={sqlCheatSheetP2} alt="Centered Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
+      
+
       </>,
-        imageUrl: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2348&q=80",
+        imageUrl: "https://img.freepik.com/free-vector/isometric-sql-illustration_23-2149260766.jpg?w=1480&t=st=1696974541~exp=1696975141~hmac=f411bd1cfb05f3e7da5d2e01f183d316f8a2753117953c63fc4e551e2f33e9f3",
     },
     {
         title: "Getting Started with Tailwind CSS",
