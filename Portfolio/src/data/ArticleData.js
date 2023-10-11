@@ -6,6 +6,7 @@ import polymorphismCodeExample from '../images/PolymorphismCodeExample.png';
 import sqlCheatSheetP1 from '../images/sql-basics-cheat-sheet-page-1.png';
 import sqlCheatSheetP2 from '../images/sql-basics-cheat-sheet-page-2.png';
 import OOPArticelImage from '../images/OOPArticleImage.png';
+import SQLArticleImage from '../images/SQLArticleImage.jpg';
 
 const url = 'https://getlinkpreview.onrender.com/';
 const requestUrl = 'https://www.youtube.com/watch?v=-OO1FqnjVuQ&ab_channel=TheMacLife'; // Replace with the URL you want to preview
@@ -107,16 +108,22 @@ export const articleData = [
         date: "October 10, 2023",
         content:     <>
         <p> Recently, I stumbled across a SQL cheat sheet that it worth including in an article. As developers, we often have to craft queries to 
-        retrieve data and perhaps conduct some analysis. While complex data analysis may require the expertise of a skilled data analyst, the SQL basics cheat sheet allows 
-        developers to perform simple yet essential data analysis on tables within a database.
+        retrieve data and perhaps conduct some analysis. While complex data analysis may require the expertise of a seasoned data analyst, the SQL basics cheat sheet allow 
+        developers to perform simple yet essential data analysis on tables in a database.
       </p>
 
       <img src={sqlCheatSheetP1} alt="Centered Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
       <img src={sqlCheatSheetP2} alt="Centered Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
     
-      <p>The cheat sheet covers the fundamental of sql such as selecting columns, filtering output using <em> WHERE </em> clause</p>
+      <p>The cheat sheet covers how to query from a single or multiple tables, filter output with null/non-nullables values, wildcards, inequality signs, and between a list of values.
+      It also demonstrates how to join multiple tables using the infamous <em>JOIN</em> operator. We also see how we can utilize the power of <em>AGGREGATE</em> functions (AVG, COUNT, MAX, MIN, SUM) and <em>GROUPING</em> output 
+      by a certain column, as well as using <em>SET OPERATIONS</em> as <em>UNION</em>, <em>INTERSECT</em>, <em>EXCEPT</em> to combine results from two or more queries. </p> 
+      <p>If you'd like to access the cheat sheet in text form, you can access it <a href="https://learnsql.com/blog/sql-basics-cheat-sheet/" className="text-ternary-dark dark:text-ternary-light hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 duration-500"
+ target="_blank">here:</a>
+     </p> 
+     <p> All in all, the cheat sheet is a useful to tool that concisely covers the fundamentals of SQL. It also serves as a good refresher for people, who are already familiar with SQL and sets them up to learn more complex SQL commands. </p>
       </>,
-        imageUrl: "https://img.freepik.com/free-vector/isometric-sql-illustration_23-2149260766.jpg?w=1480&t=st=1696974541~exp=1696975141~hmac=f411bd1cfb05f3e7da5d2e01f183d316f8a2753117953c63fc4e551e2f33e9f3",
+        imageUrl: SQLArticleImage,
     },
     {
         title: "Getting Started with Tailwind CSS",
