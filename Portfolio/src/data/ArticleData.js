@@ -197,22 +197,4 @@ export const articleData = [
       </>,
         imageUrl: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2348&q=80",
     },
-    {
-        title: "Getting Started with Tailwind CSS",
-        date: "August 8, 2023",
-        content:(
-            <div className="text-left">
-              <p>
-              There are so many extensions on the VS Code Marketplace that are helpful when doing software development, but to find
-        the best among them will take some getting used to. The list provided here includes some of the best extensions,
-        and it will be updated regularly to add more extensions that may come in the future. 
-              </p>
-              <img src={storedImageURL}/>
-    
-              {/* ... (more content) ... */}
-            </div>
-          ),
-        imageUrl: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2348&q=80",
-        imageUrl2: "https://i.ytimg.com/vi/-OO1FqnjVuQ/maxresdefault.jpg"
-    },
 ]
