@@ -162,8 +162,8 @@ export const articleData = [
         imageUrl: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2348&q=80",
     },
     {
-        title: "Getting Started with Tailwind CSS",
-        date: "August 8, 2023",
+        title: "Props in ReactJS",
+        date: "October 12, 2023",
         content:     <>
         <p>
         Visual Studio Code (VS Code) is the most popular coding editor for developers made by Microsoft.
