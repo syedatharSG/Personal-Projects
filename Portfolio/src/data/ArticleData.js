@@ -47,14 +47,15 @@ fetch(url, {
 export const articleData = [ 
   
     {
+      /* ----------------------------Principles of Object Oriented Programming Article ------------------------------------------------------*/
         title: "Principles of Object Oriented Programming",
         date: "October 5th, 2023",
         content:     <>
-        <p>
+        <p>  
         There are four main principles or pillars of object oritented programming: Inheritance, Abstraction, Encapsulation, and Polymorphism. 
         This article is a quick guide that goes over the aforementioned principles in a consise way.
       </p>
-
+      {/* The following paragraph explains each principle in more detail. */}
       <h2 className="mt-4 mb-4 font-general-medium text-2xl">Inheritance:</h2>
       <p>In a Object-Oriented Programming language, we can inherit methods and attriutes from one class to another. This creates a relationship
       between the two classes — the original class and the class that's inheriting the original class. We call the original class the parent or superclass, whereas
@@ -105,6 +106,8 @@ export const articleData = [
       </>,
         imageUrl: OOPArticelImage,
     },
+    
+    /* --------------------------------------------------SQL Basics Cheat Sheet Article ------------------------------------------------------*/
     {
         title: "SQL Basics Cheat Sheet",
         date: "October 10, 2023",
@@ -127,15 +130,18 @@ export const articleData = [
       </>,
         imageUrl: SQLArticleImage,
     },
+        /* --------------------------------------------------Props in React JS Article ------------------------------------------------------*/
     {
-        title: "Props in ReactJS",
+        title: "Props in React JS",
         date: "October 12, 2023",
         content:     <>
         <p>
-        React JS is arguably the most popular JavaScript library in the past few years. There are many real world applications that use React to
-        build the UI/UX exeperience for its users. In this article, I explain the purpose of props, its usage, and how it comes in
+        React JS is arguably the most popular JavaScript library in the past few years. There are many real world applications (Amazon, Netflix, Facebook) that use React to
+        build a seamless UI/UX exeperience for their users. In this article, I explain the purpose of props, its usage, and how it comes in
         handy. To master React, props need to fully understood. Props refer to 'properties' of an object. Its purpose is to pass input or data into a component,
-        which allows the component to access specifc customized values that we are passing through the input (props).
+        which allows the component to access specifc customized values that we are passing through the input (props). Let's look at an example component:
+        <img src={sqlCheatSheetP1} alt="Centered Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
+
       </p>
 
       </>,
