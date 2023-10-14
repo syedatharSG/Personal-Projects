@@ -132,32 +132,10 @@ export const articleData = [
         date: "October 12, 2023",
         content:     <>
         <p>
-        Visual Studio Code (VS Code) is the most popular coding editor for developers made by Microsoft.
-        It is a free and open source software made by developers for developers. According to the Stack Overflow
-        2022 survey, VS Code is the IDE of choice across all developers.
-      </p>
-      
-      {/* ... (content continues) ... */}
-      
-      <h2>Bracket Pair Colorizer</h2>
-      <p>
-        <em>Bracket Pair Colorizer</em> can highlight matching brackets in the editor, so developers can easily
-        understand which 2 brackets belong to each other. By default <code>()</code>, <code>[]</code>, and <code>{}</code>
-        are matched, but you can also configure custom bracket characters.
-      </p>
-      
-      <h2>NPM</h2>
-      <p>
-        <strong>NPM</strong> is a super handy extension for VS Code that runs the npm scripts in your <code>package.json</code>
-        file and also it validates the packages installed in your project, which are listed in the <code>package.json</code> file.
-      </p>
-      
-      {/* ... (more content) ... */}
-      
-      <p>
-        There are so many extensions on the VS Code Marketplace that are helpful when doing software development, but to find
-        the best among them will take some getting used to. The list provided here includes some of the best extensions,
-        and it will be updated regularly to add more extensions that may come in the future.
+        React JS is arguably the most popular JavaScript library in the past few years. There are many real world applications that use React to
+        build the UI/UX exeperience for its users. In this article, I explain the purpose of props, its usage, and how it comes in
+        handy. To master React, props need to fully understood. Props refer to 'properties' of an object. Its purpose is to pass input or data into a component,
+        which allows the component to access specifc customized values that we are passing through the input (props).
       </p>
 
       </>,
