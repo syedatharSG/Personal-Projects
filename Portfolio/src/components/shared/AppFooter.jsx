@@ -19,7 +19,7 @@ const socialLinks = [
 	{
 		id: 3,
 		icon: <FiLinkedin />,
-		url: 'https://www.linkedin.com/in/syed-athar-2857121b9',
+		url: 'https://www.linkedin.com/in/syed-atharr',
 	},
 ];
 
