@@ -8,6 +8,11 @@ import sqlCheatSheetP2 from '../images/sql-basics-cheat-sheet-page-2.png';
 import OOPArticelImage from '../images/OOPArticleImage.png';
 import SQLArticleImage from '../images/SQLArticleImage.jpg';
 import PropsReactJSArticleImage from '../images/PropsReactJSArticle.png';
+import ParentComponentExample from '../images/ParentComponentExample.png';
+import ParentComponentExample2 from '../images/ParentComponentExample2.png';
+import ParentComponentExample3 from '../images/ParentComponentExample3.png';
+
+import ChildComponentExample from '../images/ChildComponentExample.png';
 
 
 const url = 'https://getlinkpreview.onrender.com/';
@@ -140,9 +145,16 @@ export const articleData = [
         build a seamless UI/UX exeperience for their users. In this article, I explain the purpose of props, its usage, and how it comes in
         handy. To master React, props need to fully understood. Props refer to 'properties' of an object. Its purpose is to pass input or data into a component,
         which allows the component to access specifc customized values that we are passing through the input (props). Let's look at an example component:
-        <img src={sqlCheatSheetP1} alt="Centered Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
-
       </p>
+      <img src={ParentComponentExample} alt="Parent Component Example 1" className="mt-8 mb-8 flex justify-center items-center w-96 h-48 object-cover rounded-md mx-auto" />
+      <p> <em>App</em> is a parent component that declares the <em>h1</em> Songs and renders a child component <em>Song</em> inside a <em>div</em>. Let's look at the child component to better understand how props work: </p>
+      <img src={ChildComponentExample} alt="Child Component Example" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
+      <p>The child component currently has a couple of headings, an image, and a short description. If we render the <em>Song</em> component multiple times, the result would be the same.</p>
+      <img src={ParentComponentExample2} alt="Parent Component Example 2" className="mt-8 mb-8 flex justify-center items-center w-96 h-48 object-cover rounded-md mx-auto" />
+      <p>The Song component will display the same result four times in this instance. Consider that an app wants to use the song component, however they would like the image, description, and heading to be dynamic and flexible. 
+      This is precisely where props can help us achieve the end result. By passing customized values from a parent to child component, we can render the <em>Song</em> component in distinct ways and we will get a unique render each time we pass unique values to the component. </p>
+      <img src={ParentComponentExample3} alt="Parent Component Example 2" className="mt-8 mb-8 flex justify-center items-center w-96 h-48 object-cover rounded-md mx-auto" />
+
 
       </>,
         imageUrl: PropsReactJSArticleImage,
