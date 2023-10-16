@@ -13,7 +13,7 @@ function AppFooterCopyright() {
 				</a>
 				  
 				<a
-					href="https://stoman.me"
+					href="https://syedatharSG.github.io"
 					className="text-secondary-dark dark:text-secondary-light font-medium uppercase hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 ml-1 duration-500"
 					target="_blank"
                   	rel="noopener noreferrer"
