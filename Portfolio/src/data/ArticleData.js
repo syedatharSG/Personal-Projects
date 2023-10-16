@@ -60,56 +60,68 @@ export const articleData = [
         date: "October 5th, 2023",
         content:     <>
         <p>  
-        There are four main principles or pillars of object oritented programming: Inheritance, Abstraction, Encapsulation, and Polymorphism. 
-        This article is a quick guide that goes over the aforementioned principles in a consise way.
+        There are four main principles, or pillars, of object-oriented programming: Inheritance, Abstraction, Encapsulation, and Polymorphism. 
+        This article is a quick guide that goes over these principles concisely.
       </p>
       {/* The following paragraph explains each principle in more detail. */}
       <h2 className="mt-4 mb-4 font-general-medium text-2xl">Inheritance:</h2>
-      <p>In a Object-Oriented Programming language, we can inherit methods and attriutes from one class to another. This creates a relationship
-      between the two classes — the original class and the class that's inheriting the original class. We call the original class the parent or superclass, whereas
-      the inheriting class is called the child or subclass.
+      <p>In Object-Oriented Programming languages, we can inherit methods and attributes from one class to another, creating a relationship 
+      between the original class (parent or superclass) and the class that inherits from it (child or subclass).
       </p>
-      <img src={inheritanceCodeExample} alt="Centered Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
-      <p>The example above utilizes Java to showcase how Inheritance works — it allows the subclass to use the parent class' attributes and methods without  explicity defining in its own class.
-      Hence, Inheritance promotes code reusability and allowing the subclass to define its own seprate methods, which is an to the parent class. </p>
+
+      <img src={inheritanceCodeExample} alt="Inheritance Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
+
+      <p>The example above uses Java to showcase how Inheritance works. It allows the subclass to use the parent class's attributes and methods without 
+      explicitly defining them in its own class. Inheritance promotes code reusability and enables the subclass to define its separate methods, 
+      which is an extension to the parent class.</p>
       
       
       <h2 className="mb-4 mt-4 font-general-medium text-2xl">Abstraction:</h2>
-      <p>Abstraction is used to hide internal details from a user and only display the essential information to them. In real life, we can take any machine or a piece of equipment to demonstrate abstraction. For instance, if we use a corded lawn mower, we plug it in the power outlet and turn on the machine to begin cutting grass.
-      The individual who's using this machine does not need to know how the internals of the machine is operating — motors, wires, and metals, etc. The user merely needs to know a series of simple steps that are unrelated to the machine's internal operation.
-      In OOP, we can achieve abstraction with abstract classes and interfaces. Abstract classes can't be instantiated to create objects, rather it has to be inherited by another class:
+      <p>Abstraction is used to hide internal details from a user and present only the essential information. We can understand abstraction by using 
+      everyday machines or equipment as examples. For instance, when using a corded lawn mower, the user doesn't need to know the machine's internal 
+      workings, such as motors, wires, and metals. Instead, they follow a set of simple steps unrelated to the machine's internals. In OOP, abstraction 
+      is achieved through abstract classes and interfaces.
       </p>
-       <img src={abstractionCodeExample} alt="Centered Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
-      <p>By inheriting the abstraction class, the <em>somePhone</em> class gets inherits the <em>Call</em> method. It does not how the <em>Call</em> methods. However, it has to provide the implementation of
-      <em> Dial</em> method since it is an abstract method, and the class that inherits the abstract class must provide an implementation for the abstract methods.
-      Once it provides a body for the aforementioned method, it calls upon the <em>Call</em> method. This is an example of 
-      Abstraction as the <em>somePhone</em> utilizes <em>Call</em> method without knowing how it works internally!</p>
+
+       <img src={abstractionCodeExample} alt="Abstraction Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
+
+      <p className="mb-8">By inheriting an abstract class, as shown in the example, a class like <em>somePhone </em> inherits the <em>Call </em> method without needing 
+      to know its internal operations. It must provide an implementation for the <em>Dial </em> method since it's an abstract method, a requirement 
+      for classes inheriting abstract classes.</p>
      <p>It is also worth mentioning an abstract class can have its own set of fields/attributes that can be accessed by the subclass.</p> 
 
 
      <h2 className="mb-4 mt-4 font-general-medium text-2xl">Encapsulation:</h2>
-      <p>The general idea of this mechanism is simple. For example, you have an attribute that is not visible from the outside of an object. You bundle it with methods that provide read or write access. 
-      Encapsulation allows you to hide specific information and control access to the object's internal state. In the realm of object-oriented programming, we call this functionality as getter and setter methods. 
-      As the names indicate, a getter method retrieves an attribute and a setter method changes it.
+      <p>The general idea behind this principle is straightforward. For example, you may have an attribute that is not visible from the outside of an 
+      object. You encapsulate or bundle it with methods that provide read or write access. Encapsulation allows you to conceal specific information and 
+      regulate access to the object's internal state. In the realm of object-oriented programming, we refer to this functionality as getter and setter 
+      methods. As the names suggest, a getter method retrieves an attribute, and a setter method modifies it.
       </p>
-       <img src={encapsulationCodeExample} alt="Centered Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
-      <p> The example above demonstrates the class attributes (<em>selection</em> and <em>quantity</em>) can't be accessed directly. 
-      To access them, we have <em>getSelection</em>, <em>getQuantity</em>, and <em>setQuantity</em> methods that allows to change and accecss certain values.
-      By doing so, the class has hidden a particular piece of information and has limited the access to its attributes. </p>
+
+       <img src={encapsulationCodeExample} alt="Encapsulation Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
+
+      <p>  The example provided demonstrates that class attributes like <em>selection </em> and <em>quantity </em> cannot be accessed directly 
+      but require the use of <em>getSelection </em>, <em>getQuantity </em>, and <em>setQuantity </em> methods. This technique enhances security by 
+      limiting direct access to object attributes. </p>
 
      <h2 className="mb-4 mt-4 font-general-medium text-2xl">Polymorphism:</h2>
-      <p>Polymorphism means "many forms" and in layman terms, it refers to classes that are related to one another by inheritance. Consider the class below:
+      <p>Polymorphism means "many forms" and in layman terms, it refers to classes that are related to one another by inheritance. It allows different 
+      classes that inherit from a common parent to perform different tasks with methods of the same name. Consider the class below:
       </p>
-       <img src={polymorphismCodeExample} alt="Centered Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
-       <p>The <em>Person</em> class has a method called <em>teach</em>, and the <em>Teacher</em> class has a method with the same name. Polymorphism utilzies the
+
+       <img src={polymorphismCodeExample} alt="Polymorphism Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
+
+       <p>The <em>Person</em> class has a method called <em>teach</em>, and the <em>Teacher</em> class has an identical method. Polymorphism utilzies the
        inheritance relationship to perform different tasks. Each class that inherits <em>Person</em> can have its own implementation of <em>teach</em> method. 
        For instance, we can also add a <em>Professor</em> class that has its own <em>teach</em> method with added parameters.</p>
-       <p>Polymorphism is incredibly useful when there's different types of objects, and we write classes that can work with all those different types since they all abide by the same API.
-       On top of that, it comes in handy whenever we we want to add a new <em>Person</em> to the application without changing any of the existing logic in code.
+       <p className="mb-8">Polymorphism is incredibly useful when there's different types of objects, and we write classes that can work with all those different 
+       types since they all abide by the same API.
+       On top of that, it comes in handy whenever we we want to add a new <em>Person</em> to the application without changing any of the existing 
+       logic in code.
       </p>
        
-      <p>Object-Oriented Programming Principles remain a powerful tool that allows us to develop efficient, scalable, and maintainable software solutions. By embracing these principles,
-      we become equipped with the power to write good code that will not only stand the test of time, but also it will be much easier to manage and modify in the long haul. </p>
+      <p>In conclusion, Object-Oriented Programming Principles are powerful tools for developing efficient, scalable, and maintainable software solutions. 
+      Embracing these principles empowers developers to write code that withstands the test of time and is easy to manage and modify in the long run.</p>
        
       </>,
         imageUrl: OOPArticelImage,
@@ -121,20 +133,22 @@ export const articleData = [
         date: "October 10, 2023",
         content:     <>
         <p> Recently, I stumbled across a SQL cheat sheet that it worth including in an article. As developers, we often have to craft queries to 
-        retrieve data and perhaps conduct some analysis. While complex data analysis may require the expertise of a seasoned data analyst, the SQL basics cheat sheet allow 
+        retrieve data and conduct some analysis. While complex data analysis may require the expertise of a seasoned data analyst, the SQL cheat sheet allow 
         developers to perform simple yet essential data analysis on tables in a database.
       </p>
 
       <img src={sqlCheatSheetP1} alt="Centered Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
       <img src={sqlCheatSheetP2} alt="Centered Image" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
     
-      <p>The cheat sheet covers how to query from a single or multiple tables, filter output with null/non-nullables values, wildcards, inequality signs, and between a list of values.
-      It also demonstrates how to join multiple tables using the infamous <em>JOIN</em> operator. We also see how we can utilize the power of <em>AGGREGATE</em> functions (AVG, COUNT, MAX, MIN, SUM) and <em>GROUPING</em> output 
-      by a certain column, as well as using <em>SET OPERATIONS</em> as <em>UNION</em>, <em>INTERSECT</em>, <em>EXCEPT</em> to combine results from two or more queries. </p> 
-      <p>If you'd like to access the cheat sheet in text form, you can access it <a href="https://learnsql.com/blog/sql-basics-cheat-sheet/" className="text-ternary-dark dark:text-ternary-light hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 duration-500"
+      <p>The cheat sheet covers how to query from a single or multiple tables, filter output with null or non-null values, utilize wildcards, inequality
+       signs, and specify ranges of values. It also demonstrates how to join multiple tables using the infamous JOIN operator. Additionally, it 
+       illustrates how to harness the power of AGGREGATE functions (AVG, COUNT, MAX, MIN, SUM) and GROUP output by a specific column. Furthermore, it 
+       shows how to use SET OPERATIONS such as UNION, INTERSECT, and EXCEPT to combine results from two or more queries. </p> 
+      <p className="mb-8">If you'd like to access the cheat sheet in text form, you can access it <a href="https://learnsql.com/blog/sql-basics-cheat-sheet/" className="text-ternary-dark dark:text-ternary-light hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 duration-500"
  target="_blank">here:</a>
      </p> 
-     <p> All in all, the cheat sheet is a useful to tool that concisely covers the fundamentals of SQL. It also serves as a good refresher for people, who are already familiar with SQL and sets them up to learn more complex SQL commands. </p>
+     <p>All in all, this cheat sheet is a valuable tool that concisely covers the fundamentals of SQL. It also serves as an excellent refresher for 
+     those already familiar with SQL and sets them up to learn more complex SQL commands. </p>
       </>,
         imageUrl: SQLArticleImage,
     },
@@ -170,7 +184,7 @@ export const articleData = [
 
       <img src={ChildComponentExample2} alt="Child Component Example 2" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
 
-      <p>In the App component, we pass unique image, name, description, and artist values to the child component, Song. The child component takes props 
+      <p className="mb-8">In the App component, we pass unique image, name, description, and artist values to the child component, Song. The child component takes props 
       as a function parameter and uses these values to populate the fields of the Song component. This way, the Song component can display content that 
       is specific to each song.</p>
       <p>It's important to note that the name "props" can be changed to any identifier you prefer. 
@@ -181,7 +195,7 @@ export const articleData = [
 
       <img src={ChildComponentExample4} alt="Child Component Example 4" className="mt-8 mb-8 flex justify-center items-center w-99 h-48 object-cover rounded-md mx-auto" />
 
-      <p>Both of these approaches yield the same output. Destructuring makes the code succinct and readable, however if you prefer the original approach, that is completletly acceptable as well.</p>
+      <p className="mb-8">Both of these approaches yield the same output. Destructuring makes the code succinct and readable, however if you prefer the original approach, that is completletly acceptable as well.</p>
       <p>In summary, we now have a solid understanding of how props work in React JS. By harnessing the power of props, we can create web pages with 
       dynamic data outputs, making our applications more flexible and versatile. </p>
 

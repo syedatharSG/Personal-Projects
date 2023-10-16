@@ -4,6 +4,9 @@
 import { useState, useEffect } from 'react';
 import { FiChevronUp } from 'react-icons/fi';
 import { BiCaretUp } from 'react-icons/bi';
+import { WiDirectionUp } from 'react-icons/wi';
+
+
 
 const useScrollToTop = () => {
 	const [showScroll, setShowScroll] = useState(false);
@@ -34,17 +37,18 @@ const useScrollToTop = () => {
 
 	return (
 		<>
-			<BiCaretUp
+			<FiChevronUp
 				className="scrollToTop"
 				onClick={backToTop}
 				style={{
 					height: 30,
 					width: 30,
 					borderRadius: 50,
-					right: 50,
+					right: 10,
 					bottom: 50,
 					display: showScroll ? 'flex' : 'none',
 					padding: 5,
+					color: '#36454F'
 				}}
 			/>
 		</>
